@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="LOGIN">
+    <link rel="stylesheet" href="./css/login.css">
+</head>
+
+<body>
+    <main>
+        <div id="formContainer">
+            <span class="myName"><span class="J">J</span>Dev</span>
+            <div class="formElements">
+                <input type="email" placeholder="Email" id="cmpEmail" onchange="validacaoEmail(this)" name="email" class="email campo" >
+                <input type="password" placeholder="Password" onchange="validarCampo(this)" name="password" class="password campo" id="cmpPassword">
+                <input type="submit" value="Entrar" class="botao" id="btnEntrar" onclick="botaoFunc(this)" >
+                <input type="submit" value="Criar conta" class="botao" id="btnCriarConta">
+            </div>
+        </div>
+    </main>
+    <script src="./js/login.js"></script>
+    <script src="./js/validation.js"></script>
+</body>
+
+</html>
